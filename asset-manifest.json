@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Midesales/my-portfolio/static/css/main.d7216810.css",
+    "main.js": "/Midesales/my-portfolio/static/js/main.86dac5c6.js",
+    "static/media/project2.png": "/Midesales/my-portfolio/static/media/project2.d1af706fc375d6afc4fc.png",
+    "static/media/project3.png": "/Midesales/my-portfolio/static/media/project3.777dd17bdefeebb02cdf.png",
+    "static/media/bg.jpg": "/Midesales/my-portfolio/static/media/bg.55385c91823e29ff6916.jpg",
+    "static/media/banner-bg.png": "/Midesales/my-portfolio/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/project1.png": "/Midesales/my-portfolio/static/media/project1.b93cffe2f53a06feefe4.png",
+    "static/media/meter1.svg": "/Midesales/my-portfolio/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
+    "index.html": "/Midesales/my-portfolio/index.html",
+    "main.d7216810.css.map": "/Midesales/my-portfolio/static/css/main.d7216810.css.map",
+    "main.86dac5c6.js.map": "/Midesales/my-portfolio/static/js/main.86dac5c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7216810.css",
+    "static/js/main.86dac5c6.js"
+  ]
+}
