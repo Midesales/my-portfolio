@@ -8,7 +8,7 @@ function Header() {
       <div
         id="home"
         style={{ backgroundImage: `url(${bg})` }}
-        className=" bg-center bg-cover bg-no-repeat flex flex-col w-full h-72 "
+        className=" bg-center bg-cover bg-no-repeat flex flex-col w-full h-96 "
       >
        
         <div className="flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
