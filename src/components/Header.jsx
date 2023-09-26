@@ -25,7 +25,7 @@ function Header() {
             <a
               href="https://www.linkedin.com/in/adeagbo-ayomide/"
               target="_blank"
-              className="  text-white text-2xl"
+              className="p-2 text-lg font-bold rounded-lg bg-white text-black"
             >
               Let's Connect{" "}
             </a>
