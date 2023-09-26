@@ -8,11 +8,11 @@ function Header() {
       <div
         id="home"
         style={{ backgroundImage: `url(${bg})` }}
-        className=" bg-center bg-cover bg-no-repeat flex flex-col w-full "
+        className=" bg-center bg-cover bg-no-repeat flex flex-col w-full h-72 "
       >
        
-        <div className="wrapper flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
-          <div className="content lg:text-center">
+        <div className="flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
+          <div className=" lg:text-center">
             <div className="btn py-3">
               <button className=" border-2 border-[#b0aaaa] font-bold text-white bg-[linear-gradient(90deg,#b004b0,#38097a)] p-4 rounded-2xl">
                 Welcome to my Portfolio
