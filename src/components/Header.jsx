@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "../images/bg.jpg";
+import Navbar from "./Navbar";
 
 
 function Header() {
@@ -10,7 +11,7 @@ function Header() {
         style={{ backgroundImage: `url(${bg})` }}
         className=" bg-center bg-cover bg-no-repeat flex flex-col w-full h-96 "
       >
-       
+       <Navbar />
         <div className="flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
           <div className=" lg:text-center">
             <div className="btn py-3">

@@ -31,8 +31,8 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="bg-gray-100 py-24 px-10 grid place-content-center">
-      <div className="container mx-auto">
+    <section id="projects" className="bg-gray-100 py-24 px-10 grid place-content-center">
+      <div className="mx-auto">
         <h1 className="text-3xl font-semibold mb-10 text-center">My Projects</h1>
         <div className="grid place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
