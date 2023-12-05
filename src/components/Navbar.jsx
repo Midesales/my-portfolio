@@ -67,7 +67,7 @@ function Navbar() {
             Contact
           </a>
           <a
-            href="https://drive.google.com/file/d/1cqDpErIGAKuUQ28X5R9rNapfiU5N5w_i/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sb5PIJVg8WPhHQI_XXW24mOfpC7cFyBo/view?usp=sharing"
             target="_blank"
             className="hover:text-slate-400"
           >
