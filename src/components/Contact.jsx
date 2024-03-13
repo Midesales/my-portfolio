@@ -1,70 +1,65 @@
 import React from "react";
-
+import leaf1 from "../images/Leaf1.png";
+import leaf2 from "../images/leaf2.png";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <>
-      <div
-        id="contact"
-        className=" bg-[linear-gradient(90deg,#b004b0,#38097a);]"
-      >
-        <div className="wrapper flex justify-center  py-16 gap-52 lg:py-12">
-          <div className="content-box">
-            <h1 className="text-3xl font-semibold mb-10 text-center text-white">
-              Get in Touch
-            </h1>
-            <form
-              action=""
-              className="flex flex-col gap-2 lg:grid lg:grid-cols-2"
-            >
-              <div className="py-2">
-                <input
-                  className="bg-transparent h-14 rounded-2xl border-[1px] border-white pl-4 text-white placeholder-white w-full lg:w-36"
-                  type="text"
-                  placeholder="Name"
-                />
-              </div>
-              <div className="py-2">
-                <input
-                  className="bg-transparent h-14 rounded-2xl border-[1px] border-white pl-4 text-white placeholder-white w-full lg:w-36"
-                  type="text"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div className="py-2">
-                <input
-                  className="bg-transparent h-14 rounded-2xl border-[1px] border-white pl-4 text-white placeholder-white w-full lg:w-36"
-                  type="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="py-2">
-                <input
-                  className="bg-transparent h-14 rounded-2xl border-[1px] border-white pl-4 text-white placeholder-white w-full lg:w-36"
-                  type="tel"
-                  placeholder="Phone"
-                />
-              </div>
-              <div className="py-2">
-                <textarea
-                  className="bg-transparent rounded-2xl border-[1px] border-white h-36 pl-4 text-white w-full placeholder-white pt-2"
-                  rows={10} // Adjust the number of rows to fit your design
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </form>
-            <div className="py-2">
-              <a
-                href="mailto:vayomide2@gmail.com"
-                className="bg-white border-black border-[1] py-2 rounded-lg px-4 w-full font-bold"
-              >
-                Send
-              </a>
-            </div>
+    <section id="contact" className="text-white averia-libre-light flex flex-col items-center justify-center my-10 gap-12">
+      <div className="flex items-center justify-center w-full py-14">
+        <motion.div
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: 200 }}
+          exit={{ opacity: 0, width: 0 }}
+          transition={{ delay: 0.4 }}
+          className="flex items-center justify-center w-52 gap-4"
+        >
+          <img
+            src={leaf1}
+            alt="first-leaf"
+            className="w-6 h-auto object-contain"
+          />
+          <p className="text-orange-400 text-xl">Contact Me</p>
+          <img
+            src={leaf2}
+            alt="second-leaf"
+            className="w-6 h-auto object-contain"
+          />
+        </motion.div>
+      </div>
+      <div className="w-full flex flex-col justify-start items-center gap-4">
+        <div className="w-full p-2 lg:w-[600px] flex flex-col justify-start items-start gap-4">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="First name"
+              className="p-2 bg-transparent outline-none border border-slate-100 rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              className="p-2 bg-transparent outline-none border border-slate-100 rounded-md"
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-2 bg-transparent outline-none border border-slate-100 rounded-md"
+          />
+          <textarea
+            name="Message"
+            id=""
+            cols="0"
+            rows="10"
+            placeholder="Message here"
+            className="w-full p-2 bg-transparent outline-none border border-slate-100 rounded-md"
+          ></textarea>
+          <div className="w-full flex justify-center items-center lg:justify-end">
+            <button type="submit" className="px-6 py-4 rounded-md bg-orange-400 w-full lg:w-auto hover:bg-slate-200 hover:text-orange-400">Send</button>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

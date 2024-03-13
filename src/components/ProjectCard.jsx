@@ -1,23 +1,39 @@
-
 import React from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
+const ProjectCard = ({ title, imageUrl, projectUrl }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-const ProjectCard = ({ title, description, imageUrl, projectUrl }) => {
-  
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <img src={imageUrl} alt={title} className="mb-4 rounded-md" />
-      <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="text-gray-700 my-2">{description}</p>
-      <a
-        href={projectUrl}
-        className="text-blue-500 hover:underline"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Project
-      </a>
-    </div>
+    <motion.div
+      className="overflow-hidden cursor-pointer rounded-md relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <motion.img
+        whileHover={{ scale: 1.1 }}
+        className="w-full h-full object-contain rounded-lg"
+        src={imageUrl}
+      />
+      {isHovered && (
+        <motion.div className="absolute inset-0 backdrop-blur-md flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center gap-3">
+          <p className="text-xl text-orange-400">{title}</p>
+          <a
+            href={projectUrl}
+            className="text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={40} color="black" />
+          </a>
+          </div>
+          
+        </motion.div>
+      )}
+    </motion.div>
   );
 };
 

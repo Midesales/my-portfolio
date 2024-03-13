@@ -1,79 +1,16 @@
 import React, { useState } from "react";
-
-
+import { FaHouse, FaUser, FaDiagramProject, FaEnvelope, FaRenren } from "react-icons/fa6";
 
 function Navbar() {
-   const [toggleon, setToggleOn] = useState(false);
   return (
-    <div>
-      {/* SMALL SCREENS */}
-      <div className="absolute text-white m-5 lg:hidden md:hidden">
-        <button className="cursor-pointer" onClick={() => setToggleOn(true)}>
-          <div className="w-6 h-[2px] bg-white mb-2"></div>
-          <div className="w-6 h-[2px] bg-white mb-2"></div>
-          <div className="w-6 h-[2px] bg-white"></div>
-        </button>
-      </div>
-
-      <div className={toggleon === false ? "hidden" : ""}>
-        <div className="absolute z-50 bg-white w-40 h-screen flex-col border-r border-gray-200 pt-2 pb-4 ">
-          <div className="flex justify-end px-4 text-2xl text-white w-full">
-            <div
-              onClick={() => setToggleOn(false)}
-              className="justify-end cursor-pointer text-black hover:text-slate-400"
-            >
-              {" "}
-              x{" "}
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 p-6 font-bold">
-            <a href="/#about" className="hover:text-slate-400">
-              About Me
-            </a>
-            <a href="/#skills" className="hover:text-slate-400">
-              Skills
-            </a>
-            <a href="/#projects" className="hover:text-slate-400">
-              Projects
-            </a>
-            <a href="/#contact" className="hover:text-slate-400">
-              Contact
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1sb5PIJVg8WPhHQI_XXW24mOfpC7cFyBo/view?usp=sharing"
-              target="_blank"
-              className="hover:text-slate-400"
-            >
-              Resume
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* //LARGE SCREENS */}
-
-      <div className="text-white p-8 hidden justify-end items-center font-bold md:flex lg:flex">
-        <div className="flex  gap-4">
-          <a href="/#about" className="hover:text-slate-400">
-            About Me
-          </a>
-          <a href="/#skills" className="hover:text-slate-400">
-            Skills
-          </a>
-          <a href="/#projects" className="hover:text-slate-400">
-            Projects
-          </a>
-          <a href="/#contact" className="hover:text-slate-400">
-            Contact
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1sb5PIJVg8WPhHQI_XXW24mOfpC7cFyBo/view?usp=sharing"
-            target="_blank"
-            className="hover:text-slate-400"
-          >
-            Resume
-          </a>
-        </div>
+    <div className="fixed bottom-0 right-0  flex w-full lg:top-0 h-auto lg:h-screen lg:w-32 justify-center items-end lg:items-center pb-8 lg:pb-0 z-50">
+      <div className="px-4 py-3 transparent lg:py-12 rounded-full border flex flex-row lg:flex-col items-center justify-center gap-12 duration-200 backdrop-blur-md">
+        <a href="#" data-text = "Home" className="tooltip text-orange-400" ><FaHouse /></a>
+        <a href="#about" data-text = "About" className="tooltip  text-orange-400"><FaUser /></a>
+        <a href="#skills" data-text = "Skills"  className="tooltip text-orange-400"><FaRenren /></a>
+        <a href="#projects" data-text = "Projects" className="tooltip text-orange-400"><FaDiagramProject /></a>
+        <a href="#contact" data-text = "Contact" className="tooltip text-orange-400"><FaEnvelope /></a>
+        
       </div>
     </div>
   );
