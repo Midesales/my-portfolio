@@ -26,7 +26,7 @@ function About() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-6  ">
           <div className="flex items-center justify-center w-72">
-          <img src={Pics} alt="my-picture" className="w-full rounded-md object-fill h-auto" />
+          <img src={Pics} alt="ayo" className="w-full rounded-md object-fill h-auto" />
           </div>
           
           <div className="flex flex-col w-full gap-4 items-start justify-start">
