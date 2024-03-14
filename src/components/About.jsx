@@ -1,7 +1,7 @@
 import React from "react";
 import leaf1 from "../images/Leaf1.png";
 import leaf2 from "../images/leaf2.png";
-import Pics from "../images/IMG_3652.jpeg";
+import Pics from "../images/ayo2.jpg";
 import { motion } from "framer-motion";
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
           </motion.div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-6  ">
-          <div className="flex items-center justify-center w-72">
+          <div className="flex items-center justify-center w-80">
           <img src={Pics} alt="ayo" className="w-full rounded-md object-fill h-auto" />
           </div>
           
