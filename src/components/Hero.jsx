@@ -31,7 +31,7 @@ function Hero({words, speed}) {
     
 
   return (
-    <span className="tracking-wider text-transparent text-orange-400   mt-7">
+    <span className="tracking-wider text-transparent text-orange-500">
      {currentText}
     </span>
   );
