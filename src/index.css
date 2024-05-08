@@ -41,4 +41,16 @@
   opacity: 1;
 }
 
+/* For mobile devices (less than 768px) */
+@media screen and (max-width: 767px) {
+  .tooltip::before {
+    display: none; /* Hide the tooltip */
+  }
+}
 
+/* For medium devices (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .tooltip::before {
+    display: none; /* Hide the tooltip */
+  }
+}
