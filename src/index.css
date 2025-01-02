@@ -2,55 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.averia-libre-light {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .averia-libre-light-italic {
-    font-family: "Averia Libre", system-ui;
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  /* Tailwind CSS or your custom styles */
-
-.tooltip {
-  position: relative;
-  
-}
-
-.tooltip::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 20px); /* Adjust the distance from the icon */
-  transform: translateY(-50%);
-  background-color: white;
-  color: black;
-  padding: 8px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  white-space: nowrap;
-}
-
-
-.tooltip:hover::before {
-  opacity: 1;
-}
-
-/* For mobile devices (less than 768px) */
-@media screen and (max-width: 767px) {
-  .tooltip::before {
-    display: none; /* Hide the tooltip */
-  }
-}
-
-/* For medium devices (768px to 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .tooltip::before {
-    display: none; /* Hide the tooltip */
-  }
+* {
+  scroll-behavior: smooth;
 }
