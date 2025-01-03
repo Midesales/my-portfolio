@@ -3,9 +3,16 @@ import ProjectCard from "./ProjectCard";
 import Project1 from '../../assets/project1.png';
 import Project2 from "../../assets/project2.png";
 import Project3 from "../../assets/project3.png";
-
+import Project5 from "../../assets/project5.png";
 
 const projects = [
+  {
+    title: "Doyenify academy",
+    imageUrl: Project5, 
+    projectUrl: "https://github.com/doyenify", 
+    main: "This is an online learning platform for people that want to transition to tech.",
+    demoUrl: "https://academy.doyenify.com/"
+  },
   {
     title: "Movie box",
     imageUrl: Project2, 
@@ -32,17 +39,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="p-10 md:p-24 text-white ">
-      <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
-      <div className="flex flex-col md:flex-row  justify-center items-center">
-      <div className="text-white averia-libre-light flex flex-col md:flex-row items-center justify-center my-10 gap-4">
-      {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
+    <div id="Projects" className="p-10 md:p-24 text-white flex flex-col items-center">
+    <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
+    <div className="pt-10 flex justify-center items-center mx-auto gap-4">
+      <div className="text-white averia-libre-light grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto  gap-4">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
-      </div>
-      
     </div>
+  </div>
   );
 };
 
