@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   const currentMonth = new Date().getMonth();
-  const status = currentMonth >= 5 ? "graduate of" : "500L student of";
+  const status = currentMonth >= 5 ? "graduate of" : "final year student of";
 
   const navigateToFooter = () => {
     const footer = document.getElementById('Footer');
