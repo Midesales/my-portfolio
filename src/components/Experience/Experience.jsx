@@ -39,7 +39,7 @@ const Experience = () => {
           </span>
         </div>
         <div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
+          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center max-w-2xl">
             <img className="w-20" src={yungImg} alt="DoyenImg" />
             <span className="text-white">
               <h2 className="leading-tight">Python Tutor, YungDoyen</h2>
