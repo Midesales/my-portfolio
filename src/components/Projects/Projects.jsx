@@ -1,11 +1,19 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import Project6 from '../../assets/cvbuilder.png';
 import Project1 from '../../assets/project1.png';
 import Project2 from "../../assets/project2.png";
 import Project3 from "../../assets/project3.png";
 import Project5 from "../../assets/project5.png";
 
 const projects = [
+    {
+    title: "AI CV Builder",
+    imageUrl: Project6, 
+    projectUrl: "https://github.com/Midesales/CV-Builder", 
+    main: "An AI-powered CV builder and interview preparation platform designed to help fresh graduates create professional resumes effortlessly. It integrates a large language model (LLM) for smart resume generation and tailored interview tips.",
+    demoUrl: "https://aircvbuilder.netlify.app/"
+  },
   {
     title: "Doyenify academy",
     imageUrl: Project5, 

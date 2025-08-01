@@ -27,25 +27,9 @@ const About = () => {
                   className="text-sm md:text-md leading-tight pt-6"
                   style={{ textAlign: "justify" }}
                 >
-                  With over {experienceYears} years of experience, including
-                  valuable internships at Zuri and Doyenify, as well as hands-on
-                  learning through practical courses on Udemy, I have honed my
-                  skills in collaborative development and efficient version
-                  control using Git and GitHub. My journey is defined by a
-                  strong commitment to innovation, problem-solving, and
-                  continuous learning.
-                </p>
-                <p
-                  className="text-sm md:text-md leading-tight"
-                  style={{ textAlign: "justify" }}
-                >
-                  As I advance in the ever-evolving field of software
-                  development, I strive to contribute meaningfully by bringing
-                  fresh perspectives and embracing challenges that drive
-                  technological progress. I am passionate about blending
-                  creativity and functionality, leveraging my technical
-                  expertise to create impactful software solutions that make a
-                  positive difference.
+                  With over {experienceYears} years of experience as a frontend developer, including internships at Zuri and Doyenify, and practical training through Udemy, I’ve honed my skills in building responsive user interfaces, collaborating in teams, and using Git and GitHub effectively.
+
+                  I’m passionate about combining creativity with functionality to build user-friendly web experiences, continuously learning, and contributing to meaningful digital solutions.
                 </p>
               </span>
             </div>
@@ -59,15 +43,7 @@ const About = () => {
                   className="text-sm md:text-md leading-tight pt-6"
                   style={{ textAlign: "justify" }}
                 >
-                  As a backend developer, I have hands-on experience with
-                  Node.js, gained during my time at Doyenify, where I worked on
-                  developing efficient and scalable server-side solutions.
-                  Additionally, I am a Python developer with a passion for
-                  teaching, having guided kids in learning how to code in
-                  Python. This blend of professional experience and mentoring
-                  has deepened my understanding of backend development while
-                  fostering my ability to communicate complex concepts
-                  effectively.
+                 As a backend developer, I’ve gained hands-on experience with Node.js at Doyenify, building efficient and scalable server-side applications. I’m also a Python developer with a passion for teaching, having introduced kids to coding through beginner-friendly lessons. This mix of real-world development and mentoring has sharpened both my technical skills and my ability to explain complex concepts clearly.
                 </p>
               </span>
             </div>

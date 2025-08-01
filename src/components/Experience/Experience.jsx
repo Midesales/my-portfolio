@@ -3,8 +3,17 @@ import { FaPython, FaHtml5, FaJs, FaReact, FaCss3 } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import HngImg from "../../assets/hng.jpg";
 import DoyenImg from "../../assets/doyenify.png";
+import yungImg from "../../assets/yungdoyen-text.png";
 
 const Experience = () => {
+  const currentYear = new Date().getFullYear();
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const currentMonth = monthNames[new Date().getMonth()];
+
   return (
     <div id="Experience" className="p-10 md:p-24">
       <h1 className="text-2xl md:text-4xl text-white font-bold">Experience</h1>
@@ -31,34 +40,49 @@ const Experience = () => {
         </div>
         <div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <img className="w-20"  src={DoyenImg} alt="DoyenImg" /> 
+            <img className="w-20" src={yungImg} alt="DoyenImg" />
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, Doyenify</h2>
+              <h2 className="leading-tight">Python Tutor, YungDoyen</h2>
               <p className="text-sm leading-tight font-thin">
-                March 2024 - Present
+                Nov 2024 - {currentMonth} {currentYear}
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Intern</li>
-              </ul>
-            </span>
-          </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-          <img className="w-20"  src={HngImg} alt="HNGImg" /> 
-            <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, HNG</h2>
-              <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Oct 2023
-              </p>
-              <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Intern</li>
-              </ul>
-            </span>
-          </div>
+                <li>- Taught Python programming to young learners aged 6 - 14 in an engaging and simplified manner.</li>
+                <li>- Designed beginner-friendly coding exercises and interactive lessons using real-life examples.</li>
+            </ul>
+          </span>
+        </div>
+        <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
+          <img className="w-20" src={DoyenImg} alt="DoyenImg" />
+          <span className="text-white">
+            <h2 className="leading-tight">Frontend Developer, Doyenify</h2>
+            <p className="text-sm leading-tight font-thin">
+              April 2024 - June 2025
+            </p>
+            <ul className="text-sm p-2">
+              <li>- Built dynamic user interfaces with React, Tailwind CSS, and TypeScript.</li>
+              <li>- Participated in code reviews, agile sprints, and daily standups as a frontend intern.</li>
+
+            </ul>
+          </span>
+        </div>
+        <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
+          <img className="w-20" src={HngImg} alt="HNGImg" />
+          <span className="text-white">
+            <h2 className="leading-tight">Frontend Deveoper, HNG</h2>
+            <p className="text-sm leading-tight font-thin">
+              Sept 2023 - Oct 2023
+            </p>
+            <ul className="text-sm p-2">
+              <li>- Designed and implemented features to enhance user experience on key products.</li>
+              <li>- Gained hands-on experience in real-world frontend development projects.</li>
+
+            </ul>
+          </span>
         </div>
       </div>
     </div>
+    </div >
   );
 };
 
