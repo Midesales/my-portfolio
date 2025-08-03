@@ -7,56 +7,52 @@ import Project3 from "../../assets/project3.png";
 import Project5 from "../../assets/project5.png";
 
 const projects = [
-    {
+  {
     title: "AI CV Builder",
-    imageUrl: Project6, 
-    projectUrl: "https://github.com/Midesales/CV-Builder", 
-    main: "An AI-powered CV builder and interview preparation platform designed to help fresh graduates create professional resumes effortlessly. It integrates a large language model (LLM) for smart resume generation and tailored interview tips.",
-    demoUrl: "https://aircvbuilder.netlify.app/"
+    imageUrl: Project6,
+    projectUrl: "https://github.com/Midesales/CV-Builder",
+    demoUrl: "https://aircvbuilder.netlify.app/",
+    main: "An AI-powered CV builder and interview prep platform built with React, TypeScript, and Node.js. It uses Firebase for authentication and data storage. The system integrates a Large Language Model (LLM) for generating resumes and offering personalized interview tips to users."
   },
+
   {
-    title: "Doyenify academy",
-    imageUrl: Project5, 
-    projectUrl: "https://github.com/doyenify", 
-    main: "This is an online learning platform for people that want to transition to tech.",
-    demoUrl: "https://academy.doyenify.com/"
+    title: "Doyenify Academy",
+    imageUrl: Project5,
+    projectUrl: "https://github.com/doyenify",
+    demoUrl: "https://academy.doyenify.com/",
+    main: "A tech learning platform built with React, TypeScript, and Node.js. Firebase handles database and authentication. It includes integrated payment systems using Stripe and Paystack to support seamless course registration for new learners."
   },
+
   {
-    title: "Movie box",
-    imageUrl: Project2, 
-    projectUrl: "https://github.com/Midesales/HNGx-frontend-stage-two", 
+    title: "Movie Box",
+    imageUrl: Project2,
+    projectUrl: "https://github.com/Midesales/HNGx-frontend-stage-two",
     demoUrl: "https://zuri-frontend-stage-two.vercel.app/",
-   main: "This Movie Box App allows users to view available movies, search movies, view the details of a particular movie and add them to favorites."
+    main: "A movie search app built with React and JavaScript. Users can browse, search, and view detailed info about movies. The platform also allows users to save favorites for later viewing in a clean, user-friendly interface."
   },
-  {
-    title: "Cresthive School Dashboard",
-    imageUrl: Project1,
-    projectUrl: "https://github.com/Midesales/Cresthive-student-frontend", 
-    main: "This is a school dashboard that allows students to view their results, register courses, and view their profile.",
-    demoUrl: "https://cresthive-student-frontend.vercel.app/"
-  },
+
   {
     title: "Image Drop Gallery",
-    imageUrl: Project3, 
-    projectUrl: "https://github.com/Midesales/HNGx-frontend-stage-three", 
-    main: "This Image Gallery App is a web application that allows users to view, search, and organize images.",
-    demoUrl: "https://hngx-stage-three-gray.vercel.app/"
-  },
- 
+    imageUrl: Project3,
+    projectUrl: "https://github.com/Midesales/HNGx-frontend-stage-three",
+    demoUrl: "https://hngx-stage-three-gray.vercel.app/",
+    main: "A Firebase-authenticated image gallery built with React and JavaScript. Users can drag and drop images to organize them easily after logging in. It offers a minimal and intuitive interface focused on interactivity and simplicity."
+  }
+
 ];
 
 const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24 text-white flex flex-col items-center">
-    <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
-    <div className="pt-10 flex justify-center items-center mx-auto gap-4">
-      <div className="text-white averia-libre-light grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto  gap-4">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+      <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
+      <div className="pt-10 flex justify-center items-center mx-auto gap-4">
+        <div className="text-white averia-libre-light grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto  gap-4">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
