@@ -1,5 +1,5 @@
 import React from "react";
-import ayo from "../../assets/ayo.jpg";
+import ayo from "../../assets/off_pics.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
