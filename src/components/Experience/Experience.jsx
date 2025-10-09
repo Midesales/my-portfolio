@@ -17,7 +17,7 @@ const Experience = () => {
   return (
     <div id="Experience" className="p-10 md:p-24">
       <h1 className="text-2xl md:text-4xl text-white font-bold">Experience</h1>
-      <div className="flex flex-wrap items-center justify-around">
+      <div className="flex flex-col md:flex-row w-full items-center">
         <div className="flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10">
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
             <FaHtml5 color="#E34F26" size={50} />
@@ -39,7 +39,7 @@ const Experience = () => {
           </span>
         </div>
         <div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center max-w-2xl">
+          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
             <img className="w-20" src={yungImg} alt="DoyenImg" />
             <span className="text-white">
               <h2 className="leading-tight">Python Tutor, YungDoyen</h2>
@@ -60,8 +60,8 @@ const Experience = () => {
                 April 2024 - July 2025
               </p>
               <ul className="text-sm p-2">
-                <li>Developed dynamic user interfaces using React, Tailwind CSS, and TypeScript.</li>
-                <li>Collaborated in agile sprints, code reviews, and daily standups as part of the development team.</li>
+                <li>- Developed dynamic user interfaces using React, Tailwind CSS, and TypeScript.</li>
+                <li>- Collaborated in agile sprints, code reviews, and daily standups as part of the development team.</li>
               </ul>
 
 
