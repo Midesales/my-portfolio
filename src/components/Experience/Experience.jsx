@@ -47,21 +47,36 @@ const Experience = () => {
                 Nov 2024 - {currentMonth} {currentYear}
               </p>
               <ul className="text-sm p-2">
-                <li>- Taught Python programming to young learners aged 6 - 14 in an engaging and simplified manner.</li>
-                <li>- Designed beginner-friendly coding exercises and interactive lessons using real-life examples.</li>
+                <li>Taught Python programming to young learners aged 6 - 14 in an engaging and simplified manner.</li>
+                <li>Designed beginner-friendly coding exercises and interactive lessons using real-life examples.</li>
               </ul>
+            </span>
+          </div>
+           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
+            <img className="w-20" src={DoyenImg} alt="DoyenImg" />
+            <span className="text-white">
+              <h2 className="leading-tight">Fullstack Developer, Doyenify</h2>
+              <p className="text-sm leading-tight font-thin">
+                November 2024 - {currentMonth} {currentYear}
+              </p>
+              <ul className="text-sm p-2">
+                <li>Built dynamic user interfaces with React, Tailwind CSS, and TypeScript.</li>
+                <li>Worked on creating and integrating backend endpoints used in the frontend.</li>
+              </ul>
+
+
             </span>
           </div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
             <img className="w-20" src={DoyenImg} alt="DoyenImg" />
             <span className="text-white">
-              <h2 className="leading-tight">Fullstack Developer, Doyenify</h2>
+              <h2 className="leading-tight">Frontend Developer (Intern), Doyenify</h2>
               <p className="text-sm leading-tight font-thin">
-                April 2024 - July 2025
+                March 2024 - October 2024
               </p>
               <ul className="text-sm p-2">
-                <li>- Developed dynamic user interfaces using React, Tailwind CSS, and TypeScript.</li>
-                <li>- Collaborated in agile sprints, code reviews, and daily standups as part of the development team.</li>
+                <li>Developed dynamic user interfaces using React, Tailwind CSS, and TypeScript.</li>
+                <li>Collaborated in agile sprints, code reviews, and daily standups as part of the development team.</li>
               </ul>
 
 
@@ -75,9 +90,8 @@ const Experience = () => {
                 Sept 2023 - Oct 2023
               </p>
               <ul className="text-sm p-2">
-                <li>- Designed and implemented features to enhance user experience on key products.</li>
-                <li>- Gained hands-on experience in real-world frontend development projects.</li>
-
+                <li>Developed and optimized user interfaces using Next.js, TypeScript, JavaScript, React.js, and Tailwind CSS.</li>
+                <li>Gained hands-on experience in real-world frontend development projects.</li>
               </ul>
             </span>
           </div>
