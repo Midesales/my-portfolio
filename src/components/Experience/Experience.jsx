@@ -6,13 +6,6 @@ import DoyenImg from "../../assets/doyenify.png";
 import yungImg from "../../assets/yungdoyen-text.png";
 
 const Experience = () => {
-  const currentYear = new Date().getFullYear();
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-
-  const currentMonth = monthNames[new Date().getMonth()];
 
   return (
     <div id="Experience" className="p-10 md:p-24">
@@ -44,7 +37,7 @@ const Experience = () => {
             <span className="text-white">
               <h2 className="leading-tight">Python Tutor, YungDoyen</h2>
               <p className="text-sm leading-tight font-thin">
-                Nov 2024 - {currentMonth} {currentYear}
+                Nov 2024 - Dec 2025
               </p>
               <ul className="text-sm p-2">
                 <li>Taught Python programming to young learners aged 6 - 14 in an engaging and simplified manner.</li>
@@ -57,7 +50,7 @@ const Experience = () => {
             <span className="text-white">
               <h2 className="leading-tight">Fullstack Developer, Doyenify</h2>
               <p className="text-sm leading-tight font-thin">
-                November 2024 - {currentMonth} {currentYear}
+                Nov 2024 - Dec 2025
               </p>
               <ul className="text-sm p-2">
                 <li>Built dynamic user interfaces with React, Tailwind CSS, and TypeScript.</li>
@@ -72,7 +65,7 @@ const Experience = () => {
             <span className="text-white">
               <h2 className="leading-tight">Frontend Developer (Intern), Doyenify</h2>
               <p className="text-sm leading-tight font-thin">
-                March 2024 - October 2024
+                Mar 2024 - Oct 2024
               </p>
               <ul className="text-sm p-2">
                 <li>Developed dynamic user interfaces using React, Tailwind CSS, and TypeScript.</li>

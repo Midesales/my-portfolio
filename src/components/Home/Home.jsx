@@ -3,8 +3,7 @@ import ayo from "../../assets/off_pics.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
-  const currentMonth = new Date().getMonth();
-  const status = currentMonth >= 5 ? "graduate of" : "final year student of";
+
 
   const navigateToFooter = () => {
     const footer = document.getElementById('Footer');
@@ -34,7 +33,7 @@ const Home = () => {
           />
         </h1>
         <p className="text-sm md:text-2xl tracking-tight pt-12" style={{ textAlign: "justify" }}>
-          I am a {status} Computer Science and Engineering department at Obafemi
+          I am a graduate of Computer Science and Engineering department at Obafemi
           Awolowo University, driven by a profound passion for creating
           impactful solutions in the world of technology. My proficiency in
           React and Tailwind CSS allows me to specialize in crafting
