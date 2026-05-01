@@ -1,42 +1,146 @@
 import React from "react";
-import { FaEye, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { HiArrowUpRight } from "react-icons/hi2";
 
-const ProjectCard = ({ title, imageUrl, projectUrl, main, demoUrl }) => {
-
-
+const ProjectCard = ({ title, imageUrl, projectUrl, main, demoUrl, tags = [] }) => {
   return (
-   <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl">
-  {/* Content section grows to fill space */}
-  <div className="flex flex-col flex-grow">
-    <img className="p-4" src={imageUrl} alt="" />
-    <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">
-      {title}
-    </h3>
-    <p className="px-4 text-sm md:text-md leading-tight py-2 text-justify">
-      {main}
-    </p>
-  </div>
-
-  {/* Button section pushed to the bottom */}
-  <div className="mt-auto py-6 md:p-4 flex gap-2 md:gap-4">
-    <a
-      href={projectUrl}
-      target=""
-      rel="noreferrer"
-      className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
+    <div
+      className="project-card"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        overflow: "visible",
+      }}
     >
-      <FaGithub size={20} />
-    </a>
-    <a
-      href={demoUrl}
-      target="_blank"
-      className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
-    >
-      <FaEye size={20} />
-    </a>
-  </div>
-</div>
+      {/* Image */}
+      <div
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          borderRadius: "16px 16px 0 0",
+          aspectRatio: "16/9",
+        }}
+      >
+        <img
+          src={imageUrl}
+          alt={title}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+            transition: "transform 0.5s ease",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        />
+        {/* Overlay gradient — pointer-events none so it never blocks clicks */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to top, rgba(13,13,20,0.7) 0%, transparent 60%)",
+            pointerEvents: "none",
+          }}
+        />
+      </div>
 
+      {/* Content */}
+      <div
+        style={{
+          padding: "24px",
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+        }}
+      >
+        <h3
+          style={{
+            fontFamily: "'Fraunces', serif",
+            fontWeight: 700,
+            fontSize: "1.15rem",
+            color: "#f0ede8",
+            marginBottom: "10px",
+            letterSpacing: "-0.01em",
+          }}
+        >
+          {title}
+        </h3>
+
+        <p
+          style={{
+            fontFamily: "'Lora', serif",
+            fontSize: "0.8rem",
+            color: "rgba(240,237,232,0.5)",
+            lineHeight: 1.7,
+            marginBottom: "20px",
+            flex: 1,
+          }}
+        >
+          {main}
+        </p>
+
+        {/* Divider */}
+        <div
+          style={{
+            height: "1px",
+            background: "rgba(255,255,255,0.07)",
+            marginBottom: "20px",
+          }}
+        />
+
+        {/* Actions */}
+        <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              fontFamily: "'Lora', serif",
+              fontSize: "0.75rem",
+              color: "rgba(240,237,232,0.5)",
+              textDecoration: "none",
+              transition: "color 0.3s ease",
+              letterSpacing: "0.04em",
+              cursor: "pointer",
+              position: "relative",
+              zIndex: 1,
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#f0ede8")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(240,237,232,0.5)")}
+          >
+            <FaGithub size={15} />
+            Code
+          </a>
+
+          <a
+            href={demoUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-accent"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              padding: "8px 18px",
+              fontSize: "0.78rem",
+              textDecoration: "none",
+              marginLeft: "auto",
+              cursor: "pointer",
+              position: "relative",
+              zIndex: 1,
+            }}
+          >
+            Live Demo
+            <HiArrowUpRight size={14} />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 
